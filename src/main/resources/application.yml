@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /appmusicmcnm
+  port: 9080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    url: jdbc:postgresql://ec2-174-129-254-217.compute-1.amazonaws.com:5432/d6d6bq11o6g3to
+    username: kavlskecdpjzdr
+    password: 6f5e26654e15606fe2a0aa1257cff4af1d3399b5bcd10748660267eda0b0e7b0
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+
+logging:
+  level:
+    org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: WARN
